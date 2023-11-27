@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ургамал</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style type="text/css">
+    *{
+        margin:0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: 'open sans',sans-serif;
+
+    }
+    body{
+        margin:0px;
+     }
+     
+    .header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 1.3rem 10%;
+        background: rgba(0, 0, 0, .1);
+        backdrop-filter: blur(50px);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 100;
+    }
+    .logo {
+        font-size: 35px;
+        font-weight: bold;
+        color:#fff;
+        text-decoration: none;
+        font-weight: 700px;
+    }
+    .navbar a{
+        font-size: 22px;
+        color: #fff;
+        text-decoration: none;
+        font-weight: 500px;
+        margin-left: 40px;
+    }
+    #check{
+        display: none;        
+    }
+    .icons{
+        position: absolute;
+        right: 5%;
+        font-size:30px ;
+        color: #fff;
+        cursor: pointer;
+        display: none;
+    }
+    @media (max-width:992px) {
+        .header{
+            padding: 15px 5%;
+        }
+    }
+    @media (max-width:768px){
+        .icons{
+            display: inline-flex;
+        }
+        #check:checked~.icons #menu-icon{
+        display:none;
+        }
+        .icons #close-icon{
+        display: none;
+        }
+
+        #check:checked~.icons #close-icon{
+        display:block;
+        }
+        .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background: rgba(0, 0, 0, .1);
+        backdrop-filter: blur(50px);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1); 
+        overflow: hidden;
+        transition: .3s ease;
+        }
+
+        #check:checked~.navbar{
+            height: 17.7rem; 
+        }
+
+        .navbar a{
+        display: block;
+        font-size: 1.1rem;
+        margin:1.5rem 0;
+        text-align: center;
+        transform: translateY(50px);
+        opacity: 0;
+        transition: .3s ease;
+        }
+        #check:checked~.navbar a{
+        transform: translateY(0);
+        opacity: 1;
+        transition-delay: calc(0.1s * var(--i));
+        }
+    }
+    .contact{
+        min-height: 100vh;
+        background-color: #e8f0fe;
+        padding: 50px;
+        text-align: center;
+    }
+    .zurag1{
+        width: 500px;
+        height: 400px;
+        background-image:url(harmag.jpeg ) ;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .zurag2{
+        width: 500px;
+        height: 400px;
+        background-image:url(gag.jpg ) ;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .zurag3{
+        width: 500px;
+        height: 400px;
+        background-image:url(tsulhir.jpg ) ;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .zurag4{
+        width: 500px;
+        height: 400px;
+        background-image:url(zag.jpg ) ;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .zurag5{
+        width: 500px;
+        height: 400px;
+        background-image:url(goyo.jpg) ;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .zurag6{
+        width: 500px;
+        height: 400px;
+        background-image:url(chiherovs.jpg ) ;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .name{
+        margin-top: 80px;
+        font-size: 40px;
+        text-transform: uppercase;
+        font-weight: bold;   
+        margin-bottom: 0; 
+        text-align: center;        
+    }
+
+    .des{
+        margin-top: 0;
+        font-size: 18px;
+        width: 100%;
+        padding-bottom: 10px; 
+    }
+    </style>
+</head>
+<body>
+    <section class="content">
+        <header class="header">
+            <a href="#" class="logo">Их Богд</a>
+            <input type="checkbox" id="check">
+            <label for="check"class="icons">
+                <i class='bx bx-menu' id="menu-icon"></i>
+                <i class="bx bx-x" id="close-icon"></i>
+            </label>
+            <nav class="navbar">
+                <a href= "biydaalt.html"style="--i:0;"> Нүүр хуудас</a>
+                <a href= "muhai.html"style="--i:1;">Тухай</a>
+                <a href= "tvvh.html"style="--i:2;">Түүх</a>
+                <a href= "an,amitan.html"style="--i:3;"> Ан, амьтан</a>
+                <a href= "holboobarih.html"style="--i:4;">Холбоо барих</a>
+            </nav>
+        </header>
+        <div class="name">Ургамал</div>
+        <div class="des"> Эдэлбэр газарт байгалийн ил болоод далд баялаг болох хоолны улаан давс, малын тэжээл, хужир, зэрлэг сонгино, гоёо, хармаг, арц, чихэр өвс, 
+            лидэр алтан гагнуур, вансэмбэрүү, мөгз, цулхир, чулуун нүүрс, альбасторын чулуу, шөрмөсөн чулуу, өнгө бүрийн шороон будаг, барилгын хүрмэн 
+            чулуу мэтийн баялагтай, таван хошуу малын бэлчээр хосолсон энэ нутгийн бэлчээрийн гол ургамал нь шар улаан бударгана, дэрс, зэгс, хиаг, 
+            хялгана, агь, шаваг, тэсэг, багалуур, заг буйлс, улиас байдаг.</div>
+        <table>
+            <tr>
+                <th><div class="zurag1"></div></th>
+                <th><div class="zurag2"></div></th>
+                <th><div class="zurag3"></div></th>
+            </tr>
+            <tr>
+                <td><div class="zurag4"></div></td>
+                <td><div class="zurag5"></div></td>
+                <td><div class="zurag6"></div></td>
+            </tr>
+        </table> 
+    </section>  
+    
+</body>
+</html>

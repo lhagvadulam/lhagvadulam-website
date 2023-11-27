@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Түүх</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style type="text/css">
+        *{
+            margin:0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'open sans',sans-serif;
+        }
+        body{
+            min-height: 100vh;
+            background-size: cover;
+            background-position: center;  
+        }
+        .header{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 1.3rem 10%;
+            background: rgba(0, 0, 0, .1);
+            backdrop-filter: blur(50px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 100;
+        }
+        .logo {
+            font-size: 35px;
+            font-weight: bold;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 700;
+        }
+        .navbar a{
+            font-size: 20px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            margin-left: 40px;
+        }
+        #check{
+            display: none;        
+        }
+        .icons{
+            position: absolute;
+            right: 5%;
+            font-size:30px ;
+            color: #fff;
+            cursor: pointer;
+            display: none;
+        }
+        @media (max-width:992px) {
+            .header{
+                padding: 15px 5%;
+            }
+        }
+        @media (max-width:768px){
+            .icons{
+                display: inline-flex;
+            }
+            #check:checked~.icons #menu-icon{
+                display:none;
+            }
+            .icons #close-icon{
+                display: none;
+            }
+
+            #check:checked~.icons #close-icon{
+                display:block;
+            }
+            .navbar{
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                height: 0;
+                background: rgba(0, 0, 0, .1);
+                backdrop-filter: blur(50px);
+                box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1); 
+                overflow: hidden;
+                transition: .3s ease;
+            }
+
+            #check:checked~.navbar{
+                height: 17.7rem; 
+            }
+
+            .navbar a{
+                display: block;
+                font-size: 1.1rem;
+                margin:1.5rem 0;
+                text-align: center;
+                transform: translateY(50px);
+                opacity: 0;
+                transition: .3s ease;
+            }
+            #check:checked~.navbar a{
+                transform: translateY(0);
+                opacity: 1;
+                transition-delay: calc(0.1s * var(--i));
+            }
+        }
+        .container{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 1300px;
+            height: 650px;
+            background: #f5f5f5;
+            box-shadow: 0 30px 50px #bdbdbd;         
+        }
+        .container .slide .item{
+            width: 200px;
+            height: 300px;
+            position: absolute;
+            top: 50%;
+            transform: translate(0, -50%);
+            border-radius: 20px;
+            box-shadow: 0 30px 50px #505050;
+            background-size: cover;
+            background-position: center;
+            display: inline-block;
+        }
+        .slide .item:nth-child(1),
+        .slide .item:nth-child(2){
+            top: 0;
+            left: 0;
+            transform: translate(0,0);
+            border-radius: 0;
+            width: 100%;
+            height: 100%;
+        }.slide .item:nth-child(3){
+            left:70%
+        }
+        .slide .item:nth-child(n+4){
+            left: calc(70% + 220px);
+        }
+        .item .content{
+            position: absolute;
+            top: 50%;
+            left:100px;
+            width: 300px;
+            text-align: left;
+            color: rgb(218, 220, 232);
+            transform: translate(0,-50%);
+            font-family: Arial, Helvetica, sans-serif;
+            display: none;
+        }
+        .slide .item:nth-child(2) .content{
+            display: block;            
+        }
+        .content .name{
+            font-size: 40px;
+            text-transform: uppercase;
+            font-weight: bold;           
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Их Богд</a>
+        <input type="checkbox" id="check">
+        <label for="check"class="icons">
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <i class="bx bx-x" id="close-icon"></i>
+        </label>
+        <nav class="navbar">
+            <a href= "biydaalt.html"style="--i:0;"> Нүүр хуудас</a>
+            <a href= "muhai.html"style="--i:1;">Тухай</a>
+            <a href= "an,amitan.html"style="--i:2;">Ан, амьтан</a>
+            <a href= "urgamal.html"style="--i:3;"> Ургамал</a>
+            <a href= "holboobarih.html"style="--i:4;">Холбоо барих</a>
+        </nav>
+    </header>
+
+    <div class="container">    
+        <div class="slide">
+            <div class="item" style="background-image: url(uul4.jpg);">
+                <div class="content">
+                    <div class="name">Түүх</div>
+                    <div class="des">1958 онд 6-8 баллын хүчтэй газар хөдөлж их оргилын ар хөндийд Улиастай гэдэг устай хөндий байдаг бөгөөд хөндийн эхэнд Тэхийн бондгор хэмээх 
+                        асар өндөр барагцаалаахад их оргилоосоо 500м орчим намхан уул энэ газар хөдөлдөөс болж оргилоосоо бэлээ хүртэл таг дундуураа цуурч хуваагдан 
+                        унаж Улиастайн хөндийн эхийг хөндлөн дарж унасан учир их уулын тэргүүний дунд ихэр хоёр нуур тогтсон гэдэг. Энэ хоёр нуурийг нутгийн ард 
+                        түмэн Оюу, Номин нуур гэж нэрлэдэг билээ.</div>
+                </div>   
+            </div>
+            <div class="item" style="background-image: url(jzurag3.jpg);">
+                <div class="content">
+                    <div class="name">Түүх</div>
+                    <div class="des">1958 онд 6-8 баллын хүчтэй газар хөдөлж их оргилын ар хөндийд Улиастай гэдэг устай хөндий байдаг бөгөөд хөндийн эхэнд Тэхийн бондгор хэмээх 
+                        асар өндөр барагцаалаахад их оргилоосоо 500м орчим намхан уул энэ газар хөдөлдөөс болж оргилоосоо бэлээ хүртэл таг дундуураа цуурч хуваагдан 
+                        унаж Улиастайн хөндийн эхийг хөндлөн дарж унасан учир их уулын тэргүүний дунд ихэр хоёр нуур тогтсон гэдэг. Энэ хоёр нуурийг нутгийн ард 
+                        түмэн Оюу, Номин нуур гэж нэрлэдэг билээ.</div>
+                </div>   
+            </div>
+            <div class="item" style="background-image: url(nuur2.jpg);">
+                <div class="content">
+                    <div class="name">Түүх</div>
+                    <div class="des">1958 онд 6-8 баллын хүчтэй газар хөдөлж их оргилын ар хөндийд Улиастай гэдэг устай хөндий байдаг бөгөөд хөндийн эхэнд Тэхийн бондгор хэмээх 
+                        асар өндөр барагцаалаахад их оргилоосоо 500м орчим намхан уул энэ газар хөдөлдөөс болж оргилоосоо бэлээ хүртэл таг дундуураа цуурч хуваагдан 
+                        унаж Улиастайн хөндийн эхийг хөндлөн дарж унасан учир их уулын тэргүүний дунд ихэр хоёр нуур тогтсон гэдэг. Энэ хоёр нуурийг нутгийн ард 
+                        түмэн Оюу, Номин нуур гэж нэрлэдэг билээ.</div>
+                </div>   
+            </div>
+            <div class="item" style="background-image: url(nuur1.jpg);">
+                <div class="content">
+                    <div class="name">Түүх</div>
+                    <div class="des">1958 онд 6-8 баллын хүчтэй газар хөдөлж их оргилын ар хөндийд Улиастай гэдэг устай хөндий байдаг бөгөөд хөндийн эхэнд Тэхийн бондгор хэмээх 
+                        асар өндөр барагцаалаахад их оргилоосоо 500м орчим намхан уул энэ газар хөдөлдөөс болж оргилоосоо бэлээ хүртэл таг дундуураа цуурч хуваагдан 
+                        унаж Улиастайн хөндийн эхийг хөндлөн дарж унасан учир их уулын тэргүүний дунд ихэр хоёр нуур тогтсон гэдэг. Энэ хоёр нуурийг нутгийн ард 
+                        түмэн Оюу, Номин нуур гэж нэрлэдэг билээ.</div>
+                </div>   
+            </div>
+        </div>
+    </div>
+</body>
+</html>
