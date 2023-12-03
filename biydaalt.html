@@ -11,12 +11,18 @@
         padding: 0px;
         box-sizing: border-box;
         font-family: 'open sans',sans-serif;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
     }
     body{
         min-height: 100vh;
         background: #5b626e;
+        background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+
     }
     video{
         margin: 95px;
@@ -42,11 +48,14 @@
         font-weight: 700;
     }
     .navbar a{
-        font-size: 20px;
+        font-size: 18px;
         color: #fff;
         text-decoration: none;
         font-weight: 500;
         margin-left: 40px;
+    }
+    .navbar a:hover{
+        color: rgba(42, 59, 125);
     }
     #check{
         display: none;        
@@ -98,13 +107,17 @@
         .navbar a{
         display: block;
         font-size: 1.1rem;
+        font-weight: bold;
         margin:1.5rem 0;
         text-align: center;
         transform: translateY(50px);
         opacity: 0;
         transition: .3s ease;
         }
-        #check:checked~.navbar a{
+        .navbar a:hover{
+            color: rgba(42, 59, 125);
+        }
+        #check:checked~.navbar a{   
         transform: translateY(0);
         opacity: 1;
         transition-delay: calc(0.1s * var(--i));
@@ -112,11 +125,11 @@
     }
     
     .footer {
-    background-color: black;
+    background-color: #5b626e;
     color: #fff;
-    text-align: left;
+    text-align: center;
     font-weight: var(--font-semi);
-    padding: 2rem 0;
+    padding: 30px;
     }
 
     .footer__title {
@@ -149,11 +162,12 @@
             <i class="bx bx-x" id="close-icon"></i>
         </label>
         <nav class="navbar">
-            <a href= "muhai.html"style="--i:0;"> Тухай</a>
-            <a href= "tvvh.html"style="--i:1;">Түүх</a>
-            <a href= "an,amitan.html"style="--i:2;">Ан, амьтан</a>
-            <a href= "urgamal.html"style="--i:3;"> Ургамал</a>
-            <a href= "holboobarih.html"style="--i:4;">Холбоо барих</a>
+            <a  href= "biydaalt.html"style="--i:0;"> Нүүр хуудас</a>
+            <a  href= "muhai.html"style="--i:1;">Тухай</a>
+            <a  href= "tvvh.html"style="--i:2;">Түүх</a>
+            <a  href= "an,amitan.html"style="--i:3;">Ан амьтан</a>
+            <a  href= "urgamal.html"style="--i:4;"> Ургамал</a>
+            <a  href= "holboobarih.html"style="--i:5;">Холбоо барих</a>
         </nav>    
     </header>
 
