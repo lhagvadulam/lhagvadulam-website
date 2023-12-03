@@ -15,6 +15,7 @@
     }
     body{
         margin:0px;
+        background-color: #5b626e;
      }
      
     .header{
@@ -43,6 +44,9 @@
         text-decoration: none;
         font-weight: 500;
         margin-left: 40px;
+    }
+    .navbar a:hover{
+        color: rgba(42, 59, 125);
     }
     #check{
         display: none;        
@@ -93,12 +97,16 @@
 
         .navbar a{
         display: block;
-        font-size: 1.1rem;
+        font-size: 18px;
+        font-weight: bold;
         margin:1.5rem 0;
         text-align: center;
         transform: translateY(50px);
         opacity: 0;
         transition: .3s ease;
+        }
+        .navbar a:hover{
+            color: rgba(42, 59, 125);
         }
         #check:checked~.navbar a{
         transform: translateY(0);
@@ -106,57 +114,95 @@
         transition-delay: calc(0.1s * var(--i));
         }
     }
+    
     .zurag1{
-        width: 500px;
+        width: 485px;
         height: 400px;
-        background-image:url(amitan1.jpg ) ;
-        background-repeat: no-repeat;
+        top: 50%;
+        transform: translate(0, 10%);
+        border-radius: 20px;
+        display: inline-block;
+        cursor:pointer;
+        box-shadow: 0 4px 6px -1px rgba(0,0,0,0.5);
+        background-image:url(amitan1.jpg);
         background-size: cover;
         background-position: center;
+       
     }
     .zurag2{
-        width: 500px;
+       width: 485px;
         height: 400px;
-        background-image:url(irves.jpg ) ;
-        background-repeat: no-repeat;
+        top: 50%;
+        transform: translate(0, 10%);
+        border-radius: 20px;
+        display: inline-block;
+        cursor:pointer;
+        box-shadow: 0 4px 6px -1px rgba(0,0,0,0.5);
+        background-image:url(irves.jpg );
         background-size: cover;
         background-position: center;
+    
     }
     .zurag3{
-        width: 500px;
-        height: 400px;
-        background-image:url(tarvaga.jpg ) ;
-        background-repeat: no-repeat;
+        width: 485px;
+        height:400px;
+        top: 50%;
+        transform: translate(0, 10%);
+        border-radius: 20px;
+        display: inline-block;
+        cursor:pointer;
+        box-shadow: 0 4px 6px -1px rgba(0,0,0,0.5);
+        background-image:url(tarvaga.jpg );
         background-size: cover;
         background-position: center;
+       
     }
     .zurag4{
-        width: 500px;
+        width: 485px;
         height: 400px;
-        background-image:url(zeer.jpg ) ;
-        background-repeat: no-repeat;
+        top: 50%;
+        transform: translate(0, 10%);
+        border-radius: 20px;
+        display: inline-block;
+        cursor:pointer;
+        box-shadow: 0 4px 6px -1px rgba(0,0,0,0.5);
+        background-image:url(zeer.jpg );
         background-size: cover;
         background-position: center;
+     
     }
     .zurag5{
-        width: 500px;
+        width: 485px;
         height: 400px;
-        background-image:url(hyrs.jpg) ;
-        background-repeat: no-repeat;
+        top: 50%;
+        transform: translate(0, 10%);
+        border-radius: 20px;
+        display: inline-block;
+        cursor:pointer;
+        box-shadow: 0 4px 6px -1px rgba(0,0,0,0.5);
+        background-image:url(hyrs.jpg);
         background-size: cover;
         background-position: center;
+      
     }
     .zurag6{
-        width: 500px;
+        width: 485px;
         height: 400px;
-        background-image:url(shar.jpeg ) ;
-        background-repeat: no-repeat;
+        top: 50%;
+        transform: translate(0, 10%);
+        border-radius: 20px;
+        display: inline-block;
+        cursor:pointer;
+        box-shadow: 0 4px 6px -1px rgba(0,0,0,0.5);
+        background-image:url(shar.jpeg );
         background-size: cover;
         background-position: center;
+      
     }
 
     .name{
-        margin-top: 80px;
+        color: #fff;
+        margin-top: 120px;
         font-size: 40px;
         text-transform: uppercase;
         font-weight: bold;   
@@ -165,21 +211,24 @@
     }
 
     .des{
+        color: #fff;
         margin-top: 0;
         font-size: 18px;
         width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
         padding-bottom: 10px; 
+        text-align: justify; 
     }
     .footer {
-    background-color: black;
     color: #fff;
-    text-align: left;
+    text-align: center;
     font-weight: var(--font-semi);
-    padding: 2rem 0;
+    padding: 50px;
     }
 
     .footer__title {
-    font-size: 2rem;
+    font-size: 30px;
     margin-bottom: var(--mb-4);
     }
 
@@ -211,32 +260,35 @@
             <a href= "biydaalt.html"style="--i:0;"> Нүүр хуудас</a>
             <a href= "muhai.html"style="--i:1;">Тухай</a>
             <a href= "tvvh.html"style="--i:2;">Түүх</a>
-            <a href= "urgamal.html"style="--i:3;"> Ургамал</a>
-            <a href= "holboobarih.html"style="--i:4;">Холбоо барих</a>
+            <a href= "an,amitan.html"style="--i:3;">Ан амьтан</a>
+            <a href= "urgamal.html"style="--i:4;"> Ургамал</a>
+            <a href= "holboobarih.html"style="--i:5;">Холбоо барих</a>
         </nav>
     </header>
 
     <div class="name">Ан амьтан</div>
         <div class="des"> Монголын их говьд орших атлаа хангайн байгалийг санагдуулам номин ногоон хөвд ургамал, өнгө алаглах цэцэгсийн хүрээлэн, хүрхрэн шуугих өндөр 
             уулын түргэн урсгалт гол горхи, газар хөдлөлтөөс тогтсон байгалийн өвөрмөц сонин тогтоц, нуур, дэлхийд ховордож дархлагдсан аргаль, янгир, 
-            ирвэс зэрэг ховор ан амьтад, вансэмбэрүү, алтангагнуур, лидэр зэрэг эмийн ургамлуудыг үзэж болох юм. Ан амьтдаас аргаль, янгир ямаа, шилүүс, 
+            ирвэс зэрэг ховор ан амьтад энэхүү ууланд байдаг билээ. Ан амьтдаас аргаль, янгир ямаа, шилүүс, 
             ирвэс, хар сүүлт, зээр, үнэг, мануул, туулай, тарвага, чоно, хярс, цагаан үен, өмхий хүрэн, суусар, дорго, шар зурам, бозлог зэрэг ховор ан 
             амьтадтай Ичээтэй, Битүүтэй, Их, Бага нарийн, Элгэн зэрэг голуудтай. Ангир, нугас, хун, цахлай, тогоруу, тоодог, зэрэг усны шувууд тас бүргэд, 
-            шар шувуу, ууль, хон хэрээ, ногтруу, хулан жороо, ятуу, гөтүү, хойлог зэрэг жигүүртэн шувууд байдаг. Их Богд уулын орчмын ургамал, уур амысгалын 
+            шар шувуу, ууль, хон хэрээ, ногтруу, хулан жороо, ятуу, гөтүү, хойлог зэрэг жигүүртэн шувууд байдаг. Их Богд уулын орчмын ургамал, уур амьсгалын 
             өөрчлөлт, хүний үйл ажиллагааны сөрөг нөлөөний улмаас устах буюу дүрвэн ховордож байгаа аргал, янгир, ирвэс болон бусад амьтдыг тусгайлан 
             хамгаалах зорилгоор Жинст, Богд, Баянлиг, Баянговь сумдын хил зааг орчмын 262.856 га талбайг УИХ-ын 2008 оны 05 тоот тогтоолоор Байгалийн 
             цогцолборт газрын ангиллаар улсын тусгай хамгаалалтад авсан байна.</div>
     <table>
-        <tr>
-            <th><div class="zurag1"></div></th>  
-            <th><div class="zurag2"></div></th>
-            <th><div class="zurag3"></div></th>
-        </tr>
-        <tr>
-            <td><div class="zurag4"></div></td>
-            <td><div class="zurag5"></div></td>
-            <td><div class="zurag6"></div></td>
-        </tr>
+        <div class="parent">
+            <tr>
+                <th><div class="zurag1"></div></th>  
+                <th><div class="zurag2"></div></th>
+                <th><div class="zurag3"></div></th>
+            </tr>
+            <tr>
+                <td><div class="zurag4"></div></td>
+                <td><div class="zurag5"></div></td>
+                <td><div class="zurag6"></div></td>
+            </tr>
+        </div>
     </table>   
     <footer class="footer">
         <p class="footer__title">Lkhagva</p>
