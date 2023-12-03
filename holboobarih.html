@@ -40,6 +40,9 @@
         font-weight: 500;
         margin-left: 40px;
     }
+    .navbar a:hover{
+        color: rgba(42, 59, 125);
+    }
     #check{
         display: none;        
     }
@@ -54,6 +57,7 @@
     @media (max-width:992px) {
         .header{
             padding: 1.3rem 5%;
+            
         }
     }
     @media (max-width:768px){
@@ -62,6 +66,8 @@
         }
         #check:checked~.icons #menu-icon{
         display:none;
+        
+
         }
         .icons #close-icon{
         display: none;
@@ -81,20 +87,27 @@
         box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1); 
         overflow: hidden;
         transition: .3s ease;
+       
         }
 
         #check:checked~.navbar{
             height: 17.7rem; 
+           
         }
 
         .navbar a{
         display: block;
-        font-size: 1.1rem;
+        font-size: 18px;
+        font-weight: bold;
         margin:1.5rem 0;
         text-align: center;
         transform: translateY(50px);
         opacity: 0;
         transition: .3s ease;
+        
+        }
+        .navbar a:hover{
+            color: rgba(42, 59, 125);
         }
         #check:checked~.navbar a{
         transform: translateY(0);
@@ -103,6 +116,7 @@
         }
     }
         .contact{
+            color: #fff;
             margin-top: 60px;
             min-height: 100vh;
             background-color: #5b626e;
@@ -111,22 +125,16 @@
         }
         .contaiter{
             max-width: 800px;
-            margin: 0 auto;
         }
         .contaiter h2{
-            font-size: 36px;
-            margin-bottom: 40px;
-            color: #333;
+            font-size: 36px;     
         }
-      
+    
         .contaiter-from h3{
-            margin-bottom: 20px;
-            font-size: 24px;
-            margin-bottom: 20px;
-            color: #333;          
+            font-size: 24px;        
         }
         .from-group{
-            margin-bottom: 20px;
+            margin-top: 20px;
         }
         input, textarea{
             width: 100%;
@@ -134,7 +142,6 @@
             border-radius: 8px;
             border: none;
             background-color:#f8f9fa ;
-            color: whitess;
         }
         input:focus,
         textarea:focus{
@@ -144,56 +151,51 @@
         button{
             display: inline-block;
             padding: 12px 24px;
-            background-color: rgb(75, 42, 125);
+            background-color: rgb(42, 59, 125);
             color: #fff;
             border: none;
             cursor: pointer;
             transition: 0.3s ease;
+            margin-top: 20px;
         }
         button:hover{
-            background-color:rgb(75, 42, 125);
+            background-color:rgb(45, 42, 125);
         }
         .contact-info{
             text-align: left;
         }
         .contact-info h3{
-            margin-bottom: 20px;
             font-size: 24px;
-            margin-bottom: 20px;
-            color: #333;
         }
         .contact-info p{
-            margin-bottom: 20px;
-            color: #333;
+            margin-top: 20px;
         }
         .footer {
-    background-color: black;
-    color: #fff;
-    text-align: left;
-    font-weight: var(--font-semi);
-    padding: 2rem 0;
-    }
+        background-color: #5b626e;
+        color: #fff;
+        text-align: center;
+        font-weight: var(--font-semi);
+        padding: 2rem 0;
+        }
 
-    .footer__title {
-    font-size: 2rem;
-    margin-bottom: var(--mb-4);
-    }
+        .footer__title {
+        font-size: 2rem;
+        margin-bottom: var(--mb-4);
+        }
 
-    .footer__social {
-    margin-bottom: var(--mb-4);
-    }
+        .footer__social {
+        margin-bottom: var(--mb-4);
+        }
 
-    .footer__icon {
-    font-size: 1.5rem;
-    color: #fff;
-    margin: 0 var(--mb-2);
-    }
+        .footer__icon {
+        font-size: 1.5rem;
+        color: #fff;
+        margin: 0 var(--mb-2);
+        }
 
-    .footer__copy {
-    font-size: var(--smaller-font-size);
-    }
-
-    
+        .footer__copy {
+        font-size: var(--smaller-font-size);
+        }
     </style>
 
 </head>
@@ -206,17 +208,17 @@
             <i class="bx bx-x" id="close-icon"></i>
         </label>
         <nav class="navbar">
-            <a href= "biydaalt.html"style="--i:0;">Нүүр хуудас</a>
-            <a href= "muhai.html"style="--i:1;"> Тухай</a>
+            <a href= "biydaalt.html"style="--i:0;"> Нүүр хуудас</a>
+            <a href= "muhai.html"style="--i:1;">Тухай</a>
             <a href= "tvvh.html"style="--i:2;">Түүх</a>
-            <a href= "an,amitan.html"style="--i:3;">Ан, амьтан</a>
+            <a href= "an,amitan.html"style="--i:3;">Ан амьтан</a>
             <a href= "urgamal.html"style="--i:4;"> Ургамал</a>
+            <a href= "holboobarih.html"style="--i:5;">Холбоо барих</a>
         </nav>
     </header>
     <section class="contact">
         <div class="container">
             <h2>Холбоо барих</h2>
-            <div class="contact-wrapper">
                 <div class="contact-from">
                     <h3>Сэтгэгдэл илгээх</h3>
                     <form>
