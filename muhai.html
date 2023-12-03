@@ -10,10 +10,11 @@
         margin:0px;
         padding: 0px;
         box-sizing: border-box;
-        font-family: 'open sans',sans-serif;    
-    }
+        font-family: 'open sans',sans-serif;   
+    } 
     body{
-        margin: 0px;
+        margin:0px;
+      
     }
         
     .header{
@@ -38,10 +39,14 @@
     }
     .navbar a{
         font-size: 20px;
+        font-weight: bold;
         color: #fff;
         text-decoration: none;
         font-weight: 500;
         margin-left: 40px;
+    }
+    .navbar a:hover{
+        color:  rgb(42, 59, 125);
     }
     #check{
         display: none;        
@@ -92,12 +97,16 @@
 
         .navbar a{
         display: block;
-        font-size: 1.1rem;
+        font-size: 18px;
+        font-weight: bold;
         margin:1.5rem 0;
         text-align: center;
         transform: translateY(50px);
         opacity: 0;
         transition: .3s ease;
+        }
+        .navbar a:hover{
+           color: rgba(42, 59, 125);
         }
         #check:checked~.navbar a{
         transform: translateY(0);
@@ -109,11 +118,11 @@
             position: absolute;
             width: 100%;
             height: 100vh;
-            background-image:url(jzurag1.jpg) ;
+            background-image:url(jzurag1.jpg);
+            animation: bgchange 20s linear infinite;
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
-            animation:bgchange 20s linear infinite;
         }
         @keyframes bgchange{
             0%{
@@ -169,9 +178,9 @@
             text-align: center;          
         }
         .footer {
-    background-color: black;
+    background-color: #5b626e;
     color: #fff;
-    text-align: left;
+    text-align: center;
     font-weight: var(--font-semi);
     padding: 2rem 0;
     }
@@ -208,10 +217,11 @@
         </label>
         <nav class="navbar">
             <a href= "biydaalt.html"style="--i:0;"> Нүүр хуудас</a>
-            <a href= "tvvh.html"style="--i:1;">Түүх</a>
-            <a href= "an,amitan.html"style="--i:2;">Ан, амьтан</a>
-            <a href= "urgamal.html"style="--i:3;"> Ургамал</a>
-            <a href= "holboobarih.html"style="--i:4;">Холбоо барих</a>
+            <a href= "muhai.html"style="--i:1;">Тухай</a>
+            <a href= "tvvh.html"style="--i:2;">Түүх</a>
+            <a href= "an,amitan.html"style="--i:3;">Ан амьтан</a>
+            <a href= "urgamal.html"style="--i:4;"> Ургамал</a>
+            <a href= "holboobarih.html"style="--i:5;">Холбоо барих</a>
         </nav>
     </header>
     <div class="background">
