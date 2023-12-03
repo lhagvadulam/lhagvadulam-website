@@ -11,9 +11,12 @@
             padding: 0px;
             box-sizing: border-box;
             font-family: 'open sans',sans-serif;
+            background-size: cover;
+            background-position: center;  
         }
         body{
-            min-height: 100vh;
+            background-color: #5b626e;
+            min-height: 100px;
             background-size: cover;
             background-position: center;  
         }
@@ -43,6 +46,9 @@
             text-decoration: none;
             font-weight: 500;
             margin-left: 40px;
+        }
+        .navbar a:hover{
+            color: rgba(42, 59, 125);
         }
         #check{
             display: none;        
@@ -93,13 +99,17 @@
 
             .navbar a{
                 display: block;
-                font-size: 1.1rem;
+                font-size: 18px;
+                font-weight: bold;
                 margin:1.5rem 0;
                 text-align: center;
                 transform: translateY(50px);
                 opacity: 0;
                 transition: .3s ease;
             }
+            .navbar a:hover{
+                color: rgba(42, 59, 125);
+        }
             #check:checked~.navbar a{
                 transform: translateY(0);
                 opacity: 1;
@@ -114,7 +124,7 @@
             width: 1300px;
             height: 650px;
             background: #f5f5f5;
-            box-shadow: 0 30px 50px #bdbdbd;         
+            box-shadow: 0 30px 50px #bdbdbd;        
         }
         .container .slide .item{
             width: 200px;
@@ -124,11 +134,10 @@
             transform: translate(0, -50%);
             border-radius: 20px;
             box-shadow: 0 30px 50px #505050;
-            background-size: cover;
-            background-position: center;
             display: inline-block;
+            background-size: cover;
+            background-position: top;  
         }
-        .slide .item:nth-child(1),
         .slide .item:nth-child(2){
             top: 0;
             left: 0;
@@ -147,10 +156,8 @@
             top: 50%;
             left:100px;
             width: 300px;
-            text-align: left;
-            color: rgb(218, 220, 232);
+            color: #fff;
             transform: translate(0,-50%);
-            font-family: Arial, Helvetica, sans-serif;
             display: none;
         }
         .slide .item:nth-child(2) .content{
@@ -161,32 +168,37 @@
             text-transform: uppercase;
             font-weight: bold;           
         }
-    .footer {
-    background-color: black;
-    color: #fff;
-    text-align: left;
-    font-weight: var(--font-semi);
-    padding: 2rem 0;
-    }
+        .content .des{
+            text-align: justify;
+            font-size: 18px;
+        }
+    
+        .footer {
+        background-color: #5b626e;
+        color: #fff;
+        text-align: center;
+        font-weight: var(--font-semi);
+        padding: 2rem 0;
+        }
 
-    .footer__title {
-    font-size: 2rem;
-    margin-bottom: var(--mb-4);
-    }
+        .footer__title {
+        font-size: 2rem;
+        margin-bottom: var(--mb-4);
+        }
 
-    .footer__social {
-    margin-bottom: var(--mb-4);
-    }
+        .footer__social {
+        margin-bottom: var(--mb-4);
+        }
 
-    .footer__icon {
-    font-size: 1.5rem;
-    color: #fff;
-    margin: 0 var(--mb-2);
-    }
+        .footer__icon {
+        font-size: 1.5rem;
+        color: #fff;
+        margin: 0 var(--mb-2);
+        }
 
-    .footer__copy {
-    font-size: var(--smaller-font-size);
-    }
+        .footer__copy {
+        font-size: var(--smaller-font-size);
+        }
 
 
 
@@ -203,23 +215,16 @@
         <nav class="navbar">
             <a href= "biydaalt.html"style="--i:0;"> Нүүр хуудас</a>
             <a href= "muhai.html"style="--i:1;">Тухай</a>
-            <a href= "an,amitan.html"style="--i:2;">Ан, амьтан</a>
-            <a href= "urgamal.html"style="--i:3;"> Ургамал</a>
-            <a href= "holboobarih.html"style="--i:4;">Холбоо барих</a>
+            <a href= "tvvh.html"style="--i:2;">Түүх</a>
+            <a href= "an,amitan.html"style="--i:3;">Ан амьтан</a>
+            <a href= "urgamal.html"style="--i:4;"> Ургамал</a>
+            <a href= "holboobarih.html"style="--i:5;">Холбоо барих</a>
         </nav>
     </header>
 
     <div class="container">    
         <div class="slide">
-            <div class="item" style="background-image: url(uul4.jpg);">
-                <div class="content">
-                    <div class="name">Түүх</div>
-                    <div class="des">1958 онд 6-8 баллын хүчтэй газар хөдөлж их оргилын ар хөндийд Улиастай гэдэг устай хөндий байдаг бөгөөд хөндийн эхэнд Тэхийн бондгор хэмээх 
-                        асар өндөр барагцаалаахад их оргилоосоо 500м орчим намхан уул энэ газар хөдөлдөөс болж оргилоосоо бэлээ хүртэл таг дундуураа цуурч хуваагдан 
-                        унаж Улиастайн хөндийн эхийг хөндлөн дарж унасан учир их уулын тэргүүний дунд ихэр хоёр нуур тогтсон гэдэг. Энэ хоёр нуурийг нутгийн ард 
-                        түмэн Оюу, Номин нуур гэж нэрлэдэг билээ.</div>
-                </div>   
-            </div>
+            <div class="item"></div>
             <div class="item" style="background-image: url(jzurag3.jpg);">
                 <div class="content">
                     <div class="name">Түүх</div>
@@ -229,24 +234,8 @@
                         түмэн Оюу, Номин нуур гэж нэрлэдэг билээ.</div>
                 </div>   
             </div>
-            <div class="item" style="background-image: url(nuur2.jpg);">
-                <div class="content">
-                    <div class="name">Түүх</div>
-                    <div class="des">1958 онд 6-8 баллын хүчтэй газар хөдөлж их оргилын ар хөндийд Улиастай гэдэг устай хөндий байдаг бөгөөд хөндийн эхэнд Тэхийн бондгор хэмээх 
-                        асар өндөр барагцаалаахад их оргилоосоо 500м орчим намхан уул энэ газар хөдөлдөөс болж оргилоосоо бэлээ хүртэл таг дундуураа цуурч хуваагдан 
-                        унаж Улиастайн хөндийн эхийг хөндлөн дарж унасан учир их уулын тэргүүний дунд ихэр хоёр нуур тогтсон гэдэг. Энэ хоёр нуурийг нутгийн ард 
-                        түмэн Оюу, Номин нуур гэж нэрлэдэг билээ.</div>
-                </div>   
-            </div>
-            <div class="item" style="background-image: url(nuur1.jpg);">
-                <div class="content">
-                    <div class="name">Түүх</div>
-                    <div class="des">1958 онд 6-8 баллын хүчтэй газар хөдөлж их оргилын ар хөндийд Улиастай гэдэг устай хөндий байдаг бөгөөд хөндийн эхэнд Тэхийн бондгор хэмээх 
-                        асар өндөр барагцаалаахад их оргилоосоо 500м орчим намхан уул энэ газар хөдөлдөөс болж оргилоосоо бэлээ хүртэл таг дундуураа цуурч хуваагдан 
-                        унаж Улиастайн хөндийн эхийг хөндлөн дарж унасан учир их уулын тэргүүний дунд ихэр хоёр нуур тогтсон гэдэг. Энэ хоёр нуурийг нутгийн ард 
-                        түмэн Оюу, Номин нуур гэж нэрлэдэг билээ.</div>
-                </div>   
-            </div>
+            <div class="item" style="background-image: url(nuur2.jpg);"></div>
+            <div class="item" style="background-image: url(nuur1.jpg);"></div>
         </div>
     </div>
     <img src="tsagaan.jpg" style="width: 1470px;height: 750px;"alt="">
