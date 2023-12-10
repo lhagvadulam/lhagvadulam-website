@@ -15,7 +15,8 @@
     }
     body{
         margin:0px;
-        background-color: #5b626e;
+        background-image: url(saarall.png);
+
      }
      
     .header{
@@ -97,7 +98,7 @@
 
         .navbar a{
         display: block;
-        font-size: 18px;
+        font-size: 20px;
         font-weight: bold;
         margin:1.5rem 0;
         text-align: center;
@@ -114,8 +115,11 @@
         transition-delay: calc(0.1s * var(--i));
         }
     }
-    
-    .zurag1{
+    .parent{
+        width: 100%;
+        height: 100%;
+    }
+    .zurag{
         width: 485px;
         height: 400px;
         top: 50%;
@@ -124,82 +128,10 @@
         display: inline-block;
         cursor:pointer;
         box-shadow: 0 4px 6px -1px rgba(0,0,0,0.5);
-        background-image:url(amitan1.jpg);
+        background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-       
     }
-    .zurag2{
-       width: 485px;
-        height: 400px;
-        top: 50%;
-        transform: translate(0, 10%);
-        border-radius: 20px;
-        display: inline-block;
-        cursor:pointer;
-        box-shadow: 0 4px 6px -1px rgba(0,0,0,0.5);
-        background-image:url(irves.jpg );
-        background-size: cover;
-        background-position: center;
-    
-    }
-    .zurag3{
-        width: 485px;
-        height:400px;
-        top: 50%;
-        transform: translate(0, 10%);
-        border-radius: 20px;
-        display: inline-block;
-        cursor:pointer;
-        box-shadow: 0 4px 6px -1px rgba(0,0,0,0.5);
-        background-image:url(tarvaga.jpg );
-        background-size: cover;
-        background-position: center;
-       
-    }
-    .zurag4{
-        width: 485px;
-        height: 400px;
-        top: 50%;
-        transform: translate(0, 10%);
-        border-radius: 20px;
-        display: inline-block;
-        cursor:pointer;
-        box-shadow: 0 4px 6px -1px rgba(0,0,0,0.5);
-        background-image:url(zeer.jpg );
-        background-size: cover;
-        background-position: center;
-     
-    }
-    .zurag5{
-        width: 485px;
-        height: 400px;
-        top: 50%;
-        transform: translate(0, 10%);
-        border-radius: 20px;
-        display: inline-block;
-        cursor:pointer;
-        box-shadow: 0 4px 6px -1px rgba(0,0,0,0.5);
-        background-image:url(hyrs.jpg);
-        background-size: cover;
-        background-position: center;
-      
-    }
-    .zurag6{
-        width: 485px;
-        height: 400px;
-        top: 50%;
-        transform: translate(0, 10%);
-        border-radius: 20px;
-        display: inline-block;
-        cursor:pointer;
-        box-shadow: 0 4px 6px -1px rgba(0,0,0,0.5);
-        background-image:url(shar.jpeg );
-        background-size: cover;
-        background-position: center;
-      
-    }
-
     .name{
         color: #fff;
         margin-top: 120px;
@@ -221,10 +153,12 @@
         text-align: justify; 
     }
     .footer {
-    color: #fff;
-    text-align: center;
-    font-weight: var(--font-semi);
-    padding: 50px;
+        background-color:#6c6f81;
+        color: #fff;
+        text-align: center;
+        font-weight: var(--font-semi);
+        padding: 50px;
+        margin-top: 1%;
     }
 
     .footer__title {
@@ -279,14 +213,14 @@
     <table>
         <div class="parent">
             <tr>
-                <th><div class="zurag1"></div></th>  
-                <th><div class="zurag2"></div></th>
-                <th><div class="zurag3"></div></th>
+                <th><div class="zurag" style="background-image:url(amitan1.jpg);"></div></th>  
+                <th><div class="zurag" style="background-image:url(irves.jpg);"></div></th>
+                <th><div class="zurag" style="background-image:url(tarvaga.jpg);"></div></th>
             </tr>
             <tr>
-                <td><div class="zurag4"></div></td>
-                <td><div class="zurag5"></div></td>
-                <td><div class="zurag6"></div></td>
+                <td><div class="zurag"style="background-image:url(zeer.jpg);"></div></td>
+                <td><div class="zurag"style="background-image:url(hyrs.jpg);"></div></td>
+                <td><div class="zurag"style="background-image:url(shar.jpeg);"></div></td>
             </tr>
         </div>
     </table>   
