@@ -14,12 +14,11 @@
             background-size: cover;
             background-position: center;  
         }
-        body{
-            background-color: #5b626e;
-            min-height: 100px;
-            background-size: cover;
-            background-position: center;  
-        }
+        /*body{
+           background-image: url(saarall.png);
+            min-height: 50%;
+           
+        }*/
         .header{
             position: fixed;
             top: 0;
@@ -99,7 +98,7 @@
 
             .navbar a{
                 display: block;
-                font-size: 18px;
+                font-size: 20px;
                 font-weight: bold;
                 margin:1.5rem 0;
                 text-align: center;
@@ -121,22 +120,20 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%,-50%);
-            width: 1300px;
-            height: 650px;
+            width: 85%;
+            height: 85%;
             background: #f5f5f5;
             box-shadow: 0 30px 50px #bdbdbd;        
         }
         .container .slide .item{
-            width: 200px;
-            height: 300px;
+            width: 20%;
+            height: 30%;
             position: absolute;
-            top: 50%;
+            top: 60%;
             transform: translate(0, -50%);
             border-radius: 20px;
             box-shadow: 0 30px 50px #505050;
             display: inline-block;
-            background-size: cover;
-            background-position: top;  
         }
         .slide .item:nth-child(2){
             top: 0;
@@ -144,18 +141,18 @@
             transform: translate(0,0);
             border-radius: 0;
             width: 100%;
-            height: 100%;
+            height: 110%;
         }.slide .item:nth-child(3){
-            left:70%
+            left:60%
         }
         .slide .item:nth-child(n+4){
-            left: calc(70% + 220px);
+            left: calc(60% + 22%);
         }
         .item .content{
             position: absolute;
             top: 50%;
-            left:100px;
-            width: 300px;
+            left:5%;
+            width: 35%;
             color: #fff;
             transform: translate(0,-50%);
             display: none;
@@ -164,21 +161,22 @@
             display: block;            
         }
         .content .name{
-            font-size: 40px;
+            font-size: 190%;
             text-transform: uppercase;
             font-weight: bold;           
         }
         .content .des{
             text-align: justify;
-            font-size: 18px;
+            font-size: 120%;
         }
     
         .footer {
-        background-color: #5b626e;
+        background-color:#6c6f81;
         color: #fff;
         text-align: center;
         font-weight: var(--font-semi);
-        padding: 2rem 0;
+        margin-top: -1%;
+        padding: 50px;
         }
 
         .footer__title {
@@ -199,8 +197,6 @@
         .footer__copy {
         font-size: var(--smaller-font-size);
         }
-
-
 
     </style>
 </head>
@@ -225,7 +221,7 @@
     <div class="container">    
         <div class="slide">
             <div class="item"></div>
-            <div class="item" style="background-image: url(jzurag3.jpg);">
+            <div class="item" style="background-image:url(jzurag3.jpg);">
                 <div class="content">
                     <div class="name">Түүх</div>
                     <div class="des">1958 онд 6-8 баллын хүчтэй газар хөдөлж их оргилын ар хөндийд Улиастай гэдэг устай хөндий байдаг бөгөөд хөндийн эхэнд Тэхийн бондгор хэмээх 
@@ -238,7 +234,7 @@
             <div class="item" style="background-image: url(nuur1.jpg);"></div>
         </div>
     </div>
-    <img src="tsagaan.jpg" style="width: 1470px;height: 750px;"alt="">
+    <img src="saarall.png" style="width: 100%; height: 770px;" alt="">
     <footer class="footer">
         <p class="footer__title">Lkhagva</p>
         <div class="footer__social">
