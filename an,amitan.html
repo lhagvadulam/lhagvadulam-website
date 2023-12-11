@@ -132,6 +132,11 @@
         background-size: cover;
         background-position: center;
     }
+    .column{
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        justify-content: center;  
+    }
     .name{
         color: #fff;
         margin-top: 120px;
@@ -210,20 +215,14 @@
             өөрчлөлт, хүний үйл ажиллагааны сөрөг нөлөөний улмаас устах буюу дүрвэн ховордож байгаа аргал, янгир, ирвэс болон бусад амьтдыг тусгайлан 
             хамгаалах зорилгоор Жинст, Богд, Баянлиг, Баянговь сумдын хил зааг орчмын 262.856 га талбайг УИХ-ын 2008 оны 05 тоот тогтоолоор Байгалийн 
             цогцолборт газрын ангиллаар улсын тусгай хамгаалалтад авсан байна.</div>
-    <table>
-        <div class="parent">
-            <tr>
-                <th><div class="zurag" style="background-image:url(amitan1.jpg);"></div></th>  
-                <th><div class="zurag" style="background-image:url(irves.jpg);"></div></th>
-                <th><div class="zurag" style="background-image:url(tarvaga.jpg);"></div></th>
-            </tr>
-            <tr>
-                <td><div class="zurag"style="background-image:url(zeer.jpg);"></div></td>
-                <td><div class="zurag"style="background-image:url(hyrs.jpg);"></div></td>
-                <td><div class="zurag"style="background-image:url(shar.jpeg);"></div></td>
-            </tr>
-        </div>
-    </table>   
+     <div class="column">
+            <img src="amitan1.jpg" alt="" class="zurag">
+            <img src="irves.jpg" alt="" class="zurag">
+            <img src="tarvaga.jpg" alt="" class="zurag">
+            <img src="zeer.jpg" alt="" class="zurag">
+            <img src="hyrs.jpg" alt="" class="zurag">
+            <img src="shar.jpeg" alt="" class="zurag">      
+        </div>    
     <footer class="footer">
         <p class="footer__title">Lkhagva</p>
         <div class="footer__social">
