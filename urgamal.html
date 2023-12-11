@@ -129,7 +129,12 @@
         background-size: cover;
         background-position: center;
     }
-    
+     .column{
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        justify-content: center;
+        
+    }
     .name{
         color: #fff;
         margin-top: 120px;
@@ -203,18 +208,15 @@
             лидэр алтан гагнуур, вансэмбэрүү, мөгз, цулхир, чулуун нүүрс, альбасторын чулуу, шөрмөсөн чулуу, өнгө бүрийн шороон будаг, барилгын хүрмэн 
             чулуу гэх мэт олон баялагтай. Таван хошуу малын бэлчээр хосолсон энэ нутгийн бэлчээрийн гол ургамал нь шар улаан бударгана, дэрс, зэгс, хиаг, 
             хялгана, агь, шаваг, тэсэг, багалуур, заг буйлс, улиас зэрэг ургамал юм.</div>
-        <table>
-            <tr>
-                <th><div class="zurag" style=" background-image:url(harmag.jpeg )"></div></th>
-                <th><div class="zurag" style=" background-image:url(gag.jpg )"></div></th>
-                <th><div class="zurag"style=" background-image:url(tsulhir.jpg )"></div></th>
-            </tr>
-            <tr>
-                <td><div class="zurag"style=" background-image:url(zag.jpg )"></div></td>
-                <td><div class="zurag"style=" background-image:url(goyo.jpg )"></div></td>
-                <td><div class="zurag"style=" background-image:url(chiherovs.jpg )"></div></td>
-            </tr>
-        </table> 
+        <div class="column">
+            <img src="harmag.jpeg" alt="" class="zurag">
+            <img src="gag.jpg" alt="" class="zurag">
+            <img src="tsulhir.jpg" alt="" class="zurag">
+            <img src="zag.jpg" alt="" class="zurag">
+            <img src="goyo.jpg" alt="" class="zurag">
+            <img src="chiherovs.jpg" alt="" class="zurag">
+            
+        </div> 
     </section>  
     <footer class="footer">
         <p class="footer__title">Lkhagva</p>
